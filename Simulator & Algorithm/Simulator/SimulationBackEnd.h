@@ -1,0 +1,19 @@
+#ifndef SimulationBackEnd_h
+#define SimulationBackEnd_h
+#include <cstdlib>
+#include <string.h>
+#include <algorithm>
+#include <list>
+#include <set>
+#include <math.h>
+#include "MultiThreadingHandler.cpp"
+#include <sstream>
+using std::list;
+using std::set;
+using std::string;
+using std::cout;
+using std::endl;
+using std::ifstream;
+using std::filesystem::path;
+int startSimulating(std::string& travelPath, std::string& algorithmPath, std::string& outputDirectory, int numThreads);
+#endif /*SimulationBackEnd*/
