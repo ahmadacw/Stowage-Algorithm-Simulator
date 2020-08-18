@@ -36,9 +36,12 @@ public:
 	int numOperations;
 	ErrorHandler algoException=ErrorHandler();
 	int cantRun=0;
+	//read the ship plan from the given path
 	int readShipPlan(const std::string& full_path_and_file_name);
+	//read the ship route from the given path
 	int readShipRoute(const std::string& full_path_and_file_name);
 	int setWeightBalanceCalculator(WeightBalanceCalculator& calculator);
+	//calculate the instruction set for cargo in the input for and output the instructions to the output path
 	int getInstructionsForCargo(
 				const std::string& input_full_path_and_file_name,
 				const std::string& output_full_path_and_file_name);
